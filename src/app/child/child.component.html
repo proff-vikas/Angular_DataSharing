@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>This is child component</h1>
+
+    <p>Fruits (Data from Child class to Child class) : <span style="color:#007510">{{currentFruits}}</span></p>
+    <p>Fruits (Data Comming from parent class to child class) <span>{{Fruits}}</span></p>
+
+    <h3>Sending data to child component</h3>
+        <label for="new-input">Enter Animals</label>
+        <input type="text" id="new-input" #newInputAnimals>
+    <button (click)="addAnimals(newInputAnimals.value)">Add</button>
+</div><br>
+
+<ul>
+    Insects from Parent component<span style="color: #4f8902;">
+        <li *ngFor="let items of addDatas">{{items}}</li>
+    </span>
+</ul>
